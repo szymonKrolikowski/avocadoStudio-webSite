@@ -10,5 +10,59 @@
 
 html {
   font-size: 62.5%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper {
+  max-width: 120rem;
+}
+
+.button {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #111111;
+  margin-top: 3rem;
+}
+
+.header {
+  width: 100vw;
+  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("/images/headerBackground2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.header__headingOne {
+  font-family: 'Questrial', sans-serif;
+  font-size: 3rem;
+  letter-spacing: 0.3rem;
+  padding: 1.5rem;
+  background-color: #00FF00;
+}
+
+.header__headingTwo {
+  font-size: 2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+  background-color: #FFFFFF;
+  padding: 0.3rem 0.6rem;
+  margin-top: 3rem;
 }
 /*# sourceMappingURL=main.css.map */

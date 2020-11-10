@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&family=Questrial&display=swap');
 
 @import "./_colors";
+@import "./_mixin";
 
 *,
 ::after,
@@ -11,6 +12,46 @@
 
 html
     font-size: 62.5%
+    font-family: 'Montserrat', sans-serif
+    // font-family: 'Questrial', sans-serif
+
+.wrapper
+    @include wrapper
+
+.button
+    @include button
+
+.header
+    width: 100vw
+    height: 70vh
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    background-image: url("/images/headerBackground2.jpg")
+    background-position: center
+    background-repeat: no-repeat
+    text-align: center
+
+    &__headingOne
+        font-family: 'Questrial', sans-serif
+        font-size: 3rem
+        letter-spacing: 0.3rem
+        padding: 1.5rem
+        background-color: $lime
+
+    &__headingTwo
+        font-size: 2rem
+        font-weight: 400
+        text-transform: uppercase
+        letter-spacing: 0.4rem
+        background-color: $white
+        padding: 0.3rem 0.6rem
+        margin-top: 3rem
+
+
+
+
 
 
 
