@@ -226,6 +226,91 @@ html {
   color: #00FF00;
 }
 
+.team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5rem 2rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+  max-width: 1200px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.team__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 60vh;
+  position: relative;
+  margin: 2.5rem auto;
+}
+
+.teamBox__image {
+  width: 100%;
+  height: 100%;
+}
+
+.teamBox__text {
+  position: absolute;
+  bottom: 5vh;
+  background-color: rgba(0, 255, 0, 0.6);
+  z-index: 1;
+  width: 100%;
+  height: 11rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.teamBox__headingTwo {
+  font-family: 'Questrial', sans-serif;
+  text-transform: uppercase;
+  font-size: 2rem;
+  padding: 0.5rem;
+}
+
+.teamBox__headingThree {
+  letter-spacing: 0.3rem;
+  font-weight: 400;
+  padding: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.teamBox__paragraph {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+}
+
+.teamBox__span {
+  padding: 0.5rem;
+}
+
+.team__headingBox {
+  width: 100%;
+}
+
 @media (max-width: 500px) {
   .work__slider {
     margin-top: 3rem;
@@ -317,6 +402,37 @@ html {
     display: block;
     width: 65%;
   }
+  .team {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .team__box {
+    width: 30%;
+    height: 35vh;
+  }
+  .team__box__text {
+    position: absolute;
+    bottom: 2vh;
+    background-color: rgba(0, 255, 0, 0.6);
+    z-index: 1;
+    width: 100%;
+    height: 110px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -359,6 +475,45 @@ html {
     z-index: -1;
     left: 0;
     border-bottom: 1px solid #00FF00;
+  }
+  .team__box {
+    height: 50vh;
+  }
+  .teamBox__text {
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    -webkit-clip-path: circle(5% at 50% 50%);
+            clip-path: circle(5% at 50% 50%);
+    -webkit-transition: 2s;
+    transition: 2s;
+  }
+  .teamBox__text:hover {
+    -webkit-clip-path: circle(100% at 50% 50%);
+            clip-path: circle(100% at 50% 50%);
+  }
+  .teamBox__headingTwo {
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+  }
+  .teamBox__headingThree {
+    font-size: 2rem;
+    margin-top: 1rem;
+  }
+  .teamBox__span {
+    font-size: 1.8rem;
+  }
+  .teamBox__paragraph {
+    margin-top: 1rem;
+  }
+  .team__box--one {
+    border-bottom: 1px solid lime;
+  }
+  .team__box--two {
+    border-top: 1px solid lime;
+  }
+  .team__box--three {
+    border-right: 1px solid lime;
   }
 }
 /*# sourceMappingURL=main.css.map */
