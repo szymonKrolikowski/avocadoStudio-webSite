@@ -150,6 +150,88 @@ html {
           animation: 5s linear 1s infinite alternate showDots;
 }
 
+.work {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5rem 2rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+  max-width: 1200px;
+}
+
+.work__boxText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  position: relative;
+}
+
+.work__slider {
+  width: 100%;
+  height: 50vh;
+  position: relative;
+  margin-top: 3rem;
+}
+
+.slide__image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.slider__button--next {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  z-index: 1000;
+}
+
+.slider__button--prevent {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  z-index: 1000;
+}
+
+.slider__button {
+  background: none;
+  border: none;
+  font-size: 4rem;
+  color: #00FF00;
+}
+
+@media (max-width: 500px) {
+  .work__slider {
+    margin-top: 3rem;
+  }
+}
+
 @media (min-width: 768px) {
   .button {
     font-size: 2rem;
@@ -194,13 +276,46 @@ html {
   .aboutUs__boxParagraph {
     width: 50%;
   }
-  .boxHeading__cube {
+  .work {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 5rem 5rem;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .work__boxText {
+    padding: 5rem 3rem;
+    max-width: 50%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    text-align: left;
+  }
+  .work__slider {
+    width: 100%;
+    height: 40vh;
+    position: relative;
+    -webkit-box-shadow: 0px 0px 10px 0px #00FF00;
+            box-shadow: 0px 0px 10px 0px #00FF00;
+  }
+  .work__backgroundBox {
+    width: 600px;
+    height: 500px;
     position: absolute;
-    top: 30%;
-    right: 10rem;
+    background-color: #F5F5F5;
+    z-index: -1;
+    left: 0;
+  }
+  .headingTwo--work {
+    display: block;
+    width: 65%;
   }
 }
 
@@ -218,6 +333,32 @@ html {
   .header {
     width: 100vw;
     height: 100vh;
+  }
+  .boxHeading__cube {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    top: 30%;
+    right: 10rem;
+  }
+  .work {
+    width: 100%;
+    margin: 10rem auto;
+  }
+  .work__slider {
+    width: 100%;
+    height: 60vh;
+    position: relative;
+  }
+  .work__backgroundBox {
+    width: 1400px;
+    height: 700px;
+    position: absolute;
+    background-color: #F5F5F5;
+    z-index: -1;
+    left: 0;
+    border-bottom: 1px solid #00FF00;
   }
 }
 /*# sourceMappingURL=main.css.map */
