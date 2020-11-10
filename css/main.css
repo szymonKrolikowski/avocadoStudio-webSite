@@ -65,4 +65,25 @@ html {
   padding: 0.3rem 0.6rem;
   margin-top: 3rem;
 }
+
+@media (min-width: 768px) {
+  .header__headingOne {
+    font-size: 5.5rem;
+  }
+  .header__headingTwo {
+    font-size: 2.5rem;
+    letter-spacing: 1rem;
+  }
+  .header__button {
+    font-size: 2rem;
+    margin-top: 8rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header {
+    width: 100vw;
+    height: 100vh;
+  }
+}
 /*# sourceMappingURL=main.css.map */
