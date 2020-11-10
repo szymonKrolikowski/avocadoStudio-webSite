@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&family=Questrial&display=swap');
 
 @import "./_colors";
-@import "./_mixin";
 
 *,
 ::after,
@@ -16,10 +15,36 @@ html
     // font-family: 'Questrial', sans-serif
 
 .wrapper
-    @include wrapper
+    max-width: 120rem
 
 .button
-    @include button
+    font-size: 1.5rem
+    padding: 0.5rem
+    background: none
+    border: none
+    border-bottom: 1px solid $black
+    margin-top: 3rem
+    letter-spacing: 0.1rem
+
+.headingThree
+    font-size: 1rem
+    font-weight: 300
+    text-transform: uppercase
+    letter-spacing: 0.4rem
+    margin-bottom: 2rem
+
+.headingTwo
+    font-size: 2.7rem
+    font-weight: 400
+    margin-bottom: 4rem
+
+.paragraph
+    font-size: 1.4rem
+    font-weight: 400
+    color: $black
+    margin-bottom: 1rem
+    line-height: 2.3rem
+
 
 .header
     width: 100vw
@@ -49,6 +74,14 @@ html
         padding: 0.3rem 0.6rem
         margin-top: 3rem
 
+.aboutUs
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    align-content: center
+    padding: 5rem 2rem
+    text-align: center
 
 
 
