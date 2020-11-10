@@ -1,4 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&family=Questrial&display=swap");
+@-webkit-keyframes showDots {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes showDots {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 *,
 ::after,
 ::before {
@@ -131,24 +148,6 @@ html {
   padding: 1rem;
   -webkit-animation: 5s linear 1s infinite alternate showDots;
           animation: 5s linear 1s infinite alternate showDots;
-}
-
-@-webkit-keyframes showDots {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes showDots {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 @media (min-width: 768px) {
