@@ -49,6 +49,10 @@ html {
   line-height: 2.3rem;
 }
 
+.limeColorSpan {
+  color: #00FF00;
+}
+
 .header {
   width: 100vw;
   height: 70vh;
