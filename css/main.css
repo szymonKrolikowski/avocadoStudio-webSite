@@ -115,6 +115,42 @@ html {
   text-align: center;
 }
 
+.boxHeading__cube {
+  width: 250px;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: none;
+}
+
+.boxHeading__cubeImage {
+  opacity: 0;
+  padding: 1rem;
+  -webkit-animation: 5s linear 1s infinite alternate showDots;
+          animation: 5s linear 1s infinite alternate showDots;
+}
+
+@-webkit-keyframes showDots {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes showDots {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @media (min-width: 768px) {
   .button {
     font-size: 2rem;
@@ -158,6 +194,14 @@ html {
   }
   .aboutUs__boxParagraph {
     width: 50%;
+  }
+  .boxHeading__cube {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    top: 30%;
+    right: 10rem;
   }
 }
 

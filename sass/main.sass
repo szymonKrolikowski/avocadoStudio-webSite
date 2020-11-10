@@ -87,9 +87,25 @@ html
     align-content: center
     text-align: center
 
+.boxHeading__cube
+    width: 250px
+    height: 200px
+    display: flex
+    flex-wrap: wrap
+    display: none
 
+.boxHeading__cubeImage
+    opacity: 0
+    padding: 1rem
+    animation: 5s linear 1s infinite alternate showDots
 
-
+@keyframes showDots 
+    0% 
+        opacity: 0
+    
+    100%
+        opacity: 1
+    
 
 
 @import "./_small";
