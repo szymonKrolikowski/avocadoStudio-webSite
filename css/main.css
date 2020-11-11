@@ -353,6 +353,8 @@ html {
 
 .clients__clientImage {
   width: 100%;
+  -webkit-filter: contrast(0%);
+          filter: contrast(0%);
 }
 
 .clients__background {
@@ -587,47 +589,44 @@ html {
     -webkit-transition: 1s;
     transition: 1s;
   }
+  .clients__clientImage {
+    width: 100%;
+    -webkit-filter: contrast(0%);
+            filter: contrast(0%);
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  .clients__clientImage:hover {
+    -webkit-filter: contrast(100%);
+            filter: contrast(100%);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
   .clients__client:nth-child(1):hover {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
     border-top: 1px solid #00FF00;
     border-left: 1px solid #00FF00;
   }
   .clients__client:nth-child(2):hover {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
     border-top: 1px solid #00FF00;
   }
   .clients__client:nth-child(3):hover {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
     border-top: 1px solid #00FF00;
   }
   .clients__client:nth-child(4):hover {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
     border-top: 1px solid #00FF00;
     border-right: 1px solid #00FF00;
   }
   .clients__client:nth-child(5):hover {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
     border-bottom: 1px solid #00FF00;
     border-left: 1px solid #00FF00;
   }
   .clients__client:nth-child(6):hover {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
     border-bottom: 1px solid #00FF00;
   }
   .clients__client:nth-child(7):hover {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
     border-bottom: 1px solid #00FF00;
   }
   .clients__client:nth-child(8):hover {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
     border-bottom: 1px solid #00FF00;
     border-right: 1px solid #00FF00;
   }
