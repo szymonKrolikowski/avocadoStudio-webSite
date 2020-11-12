@@ -363,6 +363,87 @@ html {
   margin-top: 10rem;
 }
 
+.portfolio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5rem 2rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+  max-width: 1200px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.portfolio__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 50vh;
+  position: relative;
+  margin: 2.5rem auto;
+}
+
+.portfolioBox__image {
+  width: 100%;
+  height: 100%;
+}
+
+.portfolioBox__text {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0, 255, 0, 0.6);
+  z-index: 1;
+  width: 100%;
+  height: 8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.portfolioBox__headingTwo {
+  font-family: 'Questrial', sans-serif;
+  text-transform: uppercase;
+  font-size: 2rem;
+  padding: 0.5rem;
+}
+
+.portfolioBox__headingThree {
+  letter-spacing: 0.3rem;
+  font-weight: 400;
+  padding: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.portfolioBox__paragraph {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+}
+
+.portfolioBox__span {
+  padding: 0.5rem;
+}
+
 @media (max-width: 500px) {
   .work__slider {
     margin-top: 3rem;
@@ -500,6 +581,41 @@ html {
     width: 100%;
     height: 100%;
   }
+  .portfolio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .portfolio__headingBox {
+    display: block;
+    width: 100%;
+  }
+  .portfolio__box {
+    width: 30%;
+    height: 25vh;
+  }
+  .portfolioBox__text {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 255, 0, 0.6);
+    z-index: 1;
+    width: 100%;
+    height: 7rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -596,7 +712,7 @@ html {
     -webkit-transition: 1s;
     transition: 1s;
   }
-  .clients__clientImage:hover {
+  .clients__client:hover .clients__clientImage {
     -webkit-filter: contrast(100%);
             filter: contrast(100%);
     -webkit-transform: scale(1.1);
@@ -634,6 +750,44 @@ html {
     background: #F5F5F5;
     width: 100vw;
     margin-top: 10rem;
+  }
+  .portfolio__box {
+    width: 30%;
+    height: 30vh;
+  }
+  .portfolio__box:hover .portfolioBox__text {
+    -webkit-clip-path: circle(100% at 50% 50%);
+            clip-path: circle(100% at 50% 50%);
+  }
+  .portfolioBox__text {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 255, 0, 0.6);
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transition: 1s;
+    transition: 1s;
+    -webkit-clip-path: circle(0% at 50% 50%);
+            clip-path: circle(0% at 50% 50%);
+  }
+  .portfolioBox__headingTwo {
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+  }
+  .portfolioBox__headingThree {
+    font-size: 2rem;
+    margin-top: 1rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
