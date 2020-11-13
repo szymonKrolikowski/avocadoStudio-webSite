@@ -64,4 +64,3 @@
     buttonNext.addEventListener("click", showNextSlide);
     buttonPrevious.addEventListener("click", showPreviousSlide);
 }
-
