@@ -130,7 +130,7 @@ html {
   width: 30rem;
   height: 100vh;
   top: 0;
-  right: 0;
+  right: -30rem;
   background-color: #111111;
   color: #FFFFFF;
   z-index: 100;
@@ -144,6 +144,8 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .navigation__menu {
@@ -171,6 +173,10 @@ html {
 
 .navigation__contact {
   display: none;
+}
+
+.navigation__active {
+  right: 0;
 }
 
 .header {

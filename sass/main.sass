@@ -101,13 +101,15 @@ html
     width: 30rem
     height: 100vh
     top: 0
-    right: 0
+    right: -30rem
     background-color: $black
     color: $white
     z-index: 100
     display: flex
     flex-direction: column
     justify-content: center
+    transition: 1s
+
 
     &__menu
         height: 50%
@@ -126,6 +128,9 @@ html
         margin-bottom: 2rem
     &__contact
         display: none
+
+.navigation__active
+    right: 0
 
 .header
     width: 100vh
