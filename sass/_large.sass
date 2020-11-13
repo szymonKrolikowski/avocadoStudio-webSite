@@ -19,6 +19,12 @@
         top: 30%
         right: 10rem
 
+    .boxHeading__cube--work
+        display: flex
+        position: absolute
+        top: 20%
+        left: 0rem
+
     .work
         width: 100%
         margin: 10rem auto
@@ -87,44 +93,19 @@
 
     .clients__client:hover .clients__clientImage
         filter: contrast(100%)
-        transform: scale(1.1)
-
-    .clients__client:nth-child(1):hover 
-        border-top: 1px solid $lime
-        border-left: 1px solid $lime
-    
-    .clients__client:nth-child(2):hover 
-        border-top: 1px solid $lime
-    
-    .clients__client:nth-child(3):hover 
-        border-top: 1px solid $lime
-    
-    .clients__client:nth-child(4):hover 
-        border-top: 1px solid $lime
-        border-right: 1px solid $lime
-    
-    .clients__client:nth-child(5):hover 
-        border-bottom: 1px solid $lime
-        border-left: 1px solid $lime
-    
-    .clients__client:nth-child(6):hover 
-        border-bottom: 1px solid $lime
-    
-    .clients__client:nth-child(7):hover 
-        border-bottom: 1px solid $lime
-    
-    .clients__client:nth-child(8):hover 
-        border-bottom: 1px solid $lime
-        border-right: 1px solid $lime
     
     .clients__background
         background: $whiteSmoke
         width: 100vw
         margin-top: 10rem
 
+    .portfolio
+        margin-top: 10rem
+
     .portfolio__box
         width: 30%
         height: 30vh
+        cursor: pointer
 
     .portfolio__box:hover .portfolioBox__text 
         clip-path: circle(100% at 50% 50%)

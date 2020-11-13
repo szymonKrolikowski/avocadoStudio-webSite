@@ -46,6 +46,7 @@ html {
   margin-top: 3rem;
   letter-spacing: 0.1rem;
   z-index: 0;
+  cursor: pointer;
 }
 
 .button::after {
@@ -137,6 +138,11 @@ html {
   color: #00FF00;
 }
 
+.socialMediaLink {
+  text-decoration: none;
+  color: #111111;
+}
+
 .link {
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -202,7 +208,7 @@ html {
 }
 
 .header {
-  width: 100vh;
+  width: 100vw;
   height: 70vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -353,6 +359,7 @@ html {
   border: none;
   font-size: 4rem;
   color: #00FF00;
+  cursor: pointer;
 }
 
 .team {
@@ -585,6 +592,17 @@ html {
 
 .paragrap--footer {
   color: #FFFFFF;
+}
+
+.socialMediaLink--footer {
+  color: #FFFFFF;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+  font-size: 2.5rem;
+}
+
+.socialMediaLink--footer:hover {
+  color: #00FF00;
 }
 
 .footer {
@@ -859,6 +877,14 @@ html {
     top: 30%;
     right: 10rem;
   }
+  .boxHeading__cube--work {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    top: 20%;
+    left: 0rem;
+  }
   .work {
     width: 100%;
     margin: 10rem auto;
@@ -933,45 +959,19 @@ html {
   .clients__client:hover .clients__clientImage {
     -webkit-filter: contrast(100%);
             filter: contrast(100%);
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-  }
-  .clients__client:nth-child(1):hover {
-    border-top: 1px solid #00FF00;
-    border-left: 1px solid #00FF00;
-  }
-  .clients__client:nth-child(2):hover {
-    border-top: 1px solid #00FF00;
-  }
-  .clients__client:nth-child(3):hover {
-    border-top: 1px solid #00FF00;
-  }
-  .clients__client:nth-child(4):hover {
-    border-top: 1px solid #00FF00;
-    border-right: 1px solid #00FF00;
-  }
-  .clients__client:nth-child(5):hover {
-    border-bottom: 1px solid #00FF00;
-    border-left: 1px solid #00FF00;
-  }
-  .clients__client:nth-child(6):hover {
-    border-bottom: 1px solid #00FF00;
-  }
-  .clients__client:nth-child(7):hover {
-    border-bottom: 1px solid #00FF00;
-  }
-  .clients__client:nth-child(8):hover {
-    border-bottom: 1px solid #00FF00;
-    border-right: 1px solid #00FF00;
   }
   .clients__background {
     background: #F5F5F5;
     width: 100vw;
     margin-top: 10rem;
   }
+  .portfolio {
+    margin-top: 10rem;
+  }
   .portfolio__box {
     width: 30%;
     height: 30vh;
+    cursor: pointer;
   }
   .portfolio__box:hover .portfolioBox__text {
     -webkit-clip-path: circle(100% at 50% 50%);
