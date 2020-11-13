@@ -16,7 +16,9 @@ html
     // font-family: 'Questrial', sans-serif
 
 .wrapper
-    max-width: 120rem
+    max-width: 300rem
+    margin: 0 auto
+    overflow: hidden
 
 .button
     font-size: 1.5rem
@@ -26,6 +28,21 @@ html
     border-bottom: 1px solid $black
     margin-top: 3rem
     letter-spacing: 0.1rem
+    z-index: 0
+
+.button::after
+    content: ""
+    position: absolute
+    bottom: 0
+    left: 0
+    height: 0
+    width: 100%
+    background-color: $lime
+    z-index: -1
+    transition: 0.5s
+
+.button:hover::after
+    height: 100%
 
 .headingThree
     font-family: 'Questrial', sans-serif
@@ -52,7 +69,7 @@ html
     color: $lime
 
 .header
-    width: 100vw
+    width: 100vh
     height: 70vh
     display: flex
     flex-direction: column
@@ -294,6 +311,58 @@ html
 
     &__span
         padding: 0.5rem
+
+.headingThree--footer,
+.headingTwo--footer
+    color: $white
+
+.button--footer
+    color: $white
+    border-bottom: 1px solid $white
+
+.paragrap--footer
+    color: $white
+
+.footer__form
+.footer,
+    display: flex
+    width: 100vw
+    padding: 5rem 2rem
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    align-content: center
+    text-align: center
+    flex-wrap: wrap
+    margin: 0 auto
+    background-color: $black
+
+    &__input
+        background: none
+        border: none
+        color: $white
+        border-bottom: 1px solid $white
+        padding: 1rem
+        width: 100%
+        font-size: 1.6rem
+        margin-bottom: 1rem
+
+    &__textarea
+        background: none
+        color: white
+        font-size: 1.6rem
+        min-width: 100%
+        min-height: 20vh
+        padding: 1rem
+        border: none
+        border-bottom: 1px solid $white
+
+    &__socialMediaBox
+        margin-top: 4rem
+
+    &__span
+        font-size: 2rem
+        padding: 1rem
 
 
 @import "./_small";

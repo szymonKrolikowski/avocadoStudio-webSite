@@ -31,7 +31,9 @@ html {
 }
 
 .wrapper {
-  max-width: 120rem;
+  max-width: 300rem;
+  margin: 0 auto;
+  overflow: hidden;
 }
 
 .button {
@@ -42,6 +44,24 @@ html {
   border-bottom: 1px solid #111111;
   margin-top: 3rem;
   letter-spacing: 0.1rem;
+  z-index: 0;
+}
+
+.button::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 0;
+  width: 100%;
+  background-color: #00FF00;
+  z-index: -1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.button:hover::after {
+  height: 100%;
 }
 
 .headingThree {
@@ -73,7 +93,7 @@ html {
 }
 
 .header {
-  width: 100vw;
+  width: 100vh;
   height: 70vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -444,6 +464,76 @@ html {
   padding: 0.5rem;
 }
 
+.headingThree--footer,
+.headingTwo--footer {
+  color: #FFFFFF;
+}
+
+.button--footer {
+  color: #FFFFFF;
+  border-bottom: 1px solid #FFFFFF;
+}
+
+.paragrap--footer {
+  color: #FFFFFF;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  padding: 5rem 2rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 auto;
+  background-color: #111111;
+}
+
+.footer__input {
+  background: none;
+  border: none;
+  color: #FFFFFF;
+  border-bottom: 1px solid #FFFFFF;
+  padding: 1rem;
+  width: 100%;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.footer__textarea {
+  background: none;
+  color: white;
+  font-size: 1.6rem;
+  min-width: 100%;
+  min-height: 20vh;
+  padding: 1rem;
+  border: none;
+  border-bottom: 1px solid #FFFFFF;
+}
+
+.footer__socialMediaBox {
+  margin-top: 4rem;
+}
+
+.footer__span {
+  font-size: 2rem;
+  padding: 1rem;
+}
+
 @media (max-width: 500px) {
   .work__slider {
     margin-top: 3rem;
@@ -615,6 +705,12 @@ html {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .footer__input {
+    max-width: 80%;
+  }
+  .footer__textarea {
+    min-width: 80%;
   }
 }
 
