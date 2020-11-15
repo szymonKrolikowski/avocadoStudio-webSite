@@ -42,6 +42,7 @@
     });
 
     const showNextSlide = () => {
+        arrSlide[i].classList.remove("slider__active")
         i++;
         if(i === 3) {
             i = 0;
@@ -49,9 +50,11 @@
 
         index++;
         arrSlide[i].style.zIndex = index;
+        arrSlide[i].classList.add("slider__active")
     };
 
     const showPreviousSlide = () => {
+        arrSlide[i].classList.remove("slider__active");
         i--;
         if(i === -1) {
             i = 2;
@@ -59,6 +62,7 @@
 
         index++;
         arrSlide[i].style.zIndex = index;
+        arrSlide[i].classList.add("slider__active");
     }
 
     buttonNext.addEventListener("click", showNextSlide);
