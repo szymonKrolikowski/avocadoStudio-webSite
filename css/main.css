@@ -16,6 +16,24 @@
   }
 }
 
+@-webkit-keyframes showSlider {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes showSlider {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 *,
 ::after,
 ::before {
@@ -338,6 +356,12 @@ html {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.slider__active {
+  opacity: 1;
+  -webkit-animation: showSlider 0.5s;
+          animation: showSlider 0.5s;
 }
 
 .slider__button--next {
